@@ -15,9 +15,11 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/noto-sans-jp": "^4.5.0",
     "babel-plugin-styled-components": "^1.13.2",
     "gatsby": "^3.11.0",
     "gatsby-plugin-image": "^1.11.0",
+    "gatsby-plugin-layout": "^2.12.0",
     "gatsby-plugin-react-helmet": "^4.11.0",
     "gatsby-plugin-sharp": "^3.11.0",
     "gatsby-plugin-sitemap": "^4.7.0",

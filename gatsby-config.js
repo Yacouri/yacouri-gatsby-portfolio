@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "gatsby-portfolio",
+    title: "Yacouri Portfolio",
   },
   plugins: [
     "gatsby-plugin-styled-components",
