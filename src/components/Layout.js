@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     <div>
       <Navbar />
       <div>{children}</div>
-      footer
+      Copyright © 2021 Zouhir Yacouri. Made with Gatsby by YACOURI
     </div>
   );
 };
