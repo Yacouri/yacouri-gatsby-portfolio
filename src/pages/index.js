@@ -8,7 +8,7 @@ import "@fontsource/noto-sans-jp/300.css";
 import "@fontsource/noto-sans-jp/400.css";
 import "@fontsource/noto-sans-jp/500.css";
 import "@fontsource/noto-sans-jp/700.css";
-import About from "../components/About/About";
+// import About from "../components/About/About";
 import Skills from "../components/Skills/Skills";
 
 const IndexPage = () => {
@@ -16,7 +16,7 @@ const IndexPage = () => {
     <Layout>
       <GlobalStyle />
       <Home />
-      <About />
+      {/* <About /> */}
       <Skills />
     </Layout>
   );

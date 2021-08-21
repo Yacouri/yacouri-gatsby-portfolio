@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, SectionInfo } from "../../global/style";
 import { ButtonsWrapper } from "./style";
 import WorkingDesk from "../../images/working-desk.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Home = () => {
   return (
