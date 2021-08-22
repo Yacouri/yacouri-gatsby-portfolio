@@ -13,9 +13,7 @@ import YellowLines from "../../images/yellow-lines.png";
 
 const Skills = () => {
   return (
-    <Container
-      bgImage={YellowLines}
-    >
+    <Container bgImage={YellowLines}>
       <section>
         <PageTitle title="Skills" color={colors.pink} />
         <Row gap100>
@@ -23,8 +21,8 @@ const Skills = () => {
             <img src={GeekProgrammer} alt="geek-programmer" />
           </SectionInfo>
           <SectionInfo>
-            <h2 className="s-title">SKills & Services</h2>
-            <p className="service-caption">
+            <h2 className="title">SKills & Services</h2>
+            <p className="caption">
               I will help you to take your business online <br />
               & i will lead you through the process while
               <br />

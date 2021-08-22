@@ -7,7 +7,7 @@ export const ServiceCardWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-`
+`;
 
 export const ServiceCard = styled.div`
   display: grid;
@@ -16,7 +16,7 @@ export const ServiceCard = styled.div`
   background-color: ${colors.lightYellow};
   border-radius: 10px;
   padding: 15px;
-  img{
+  img {
     width: 45px;
   }
-`
+`;

@@ -31,6 +31,6 @@ export const Mailto = styled.div`
     text-decoration: none;
     color: ${colors.white};
     background-color: ${colors.primary};
-		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   }
 `;
