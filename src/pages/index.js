@@ -12,6 +12,7 @@ import "@fontsource/noto-sans-jp/700.css";
 import Skills from "../components/Skills/Skills";
 import Startups from "../components/Startups/Startups";
 import SharedProjects from "../components/SharedProjects/SharedProjects";
+import WorkTogether from "../components/WorkTogether/WorkTogether";
 
 const IndexPage = () => {
   return (
@@ -22,6 +23,7 @@ const IndexPage = () => {
       <Skills />
       <Startups />
       <SharedProjects />
+      <WorkTogether />
     </Layout>
   );
 };
