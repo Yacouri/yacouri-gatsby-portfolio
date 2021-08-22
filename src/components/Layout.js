@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer/Footer";
 import Navbar from "./Navbar/Navbar";
 
 const Layout = ({ children }) => {
@@ -6,7 +7,7 @@ const Layout = ({ children }) => {
     <div>
       <Navbar />
       <div>{children}</div>
-      Copyright © 2021 Zouhir Yacouri. Made with Gatsby by YACOURI
+      <Footer />
     </div>
   );
 };

@@ -15,4 +15,5 @@ export const colors = {
   lightBehance: "#CCD8FF",
   github: "#000000",
   lightGithub: "#9E9E9E",
+  lightGray: "#EEEAFD",
 };
