@@ -60,13 +60,13 @@ export const SectionInfo = styled.div`
   }
   .caption {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 15px;
     color: ${colors.secondary};
   }
   .home-caption {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 30px;
     color: ${colors.secondary};
   }
