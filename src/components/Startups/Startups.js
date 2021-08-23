@@ -12,7 +12,7 @@ import Herseyshop from "../../images/herseyshop.png";
 
 const Startups = () => {
   return (
-    <Container bgImage={VioletLines} bgColor={colors.lightViolet}>
+    <Container id="clients" bgImage={VioletLines} bgColor={colors.lightViolet}>
       <section>
         <PageTitle title="Startups" color={colors.primary} />
         <Row gap100>

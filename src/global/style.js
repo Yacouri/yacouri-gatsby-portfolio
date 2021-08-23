@@ -2,6 +2,9 @@ import styled, { createGlobalStyle, css } from "styled-components";
 import { colors } from "../global/colors";
 
 export const GlobalStyle = createGlobalStyle`
+  html {
+    scroll-behavior: smooth;
+  }
   *{
     margin: 0;
     padding: 0;
@@ -22,6 +25,11 @@ export const Container = styled.div`
     align-self: center;
     margin: 0px 300px;
   }
+  ${(props) =>
+    props.mt100 &&
+    css`
+      margin-top: 100px;
+    `}
 `;
 
 export const Row = styled.div`

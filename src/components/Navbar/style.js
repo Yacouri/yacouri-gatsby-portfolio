@@ -2,9 +2,13 @@ import styled from "styled-components";
 import { colors } from "../../global/colors";
 
 export const Nav = styled.div`
+  position: fixed;
+  top:0;
+  padding: 20px 0px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
   width: 95%;
   margin: 0 auto;
-  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;

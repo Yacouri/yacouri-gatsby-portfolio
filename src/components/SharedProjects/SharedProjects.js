@@ -14,7 +14,11 @@ import {
 
 const SharedProjects = () => {
   return (
-    <Container bgImage={TomatoLines} bgColor={colors.lightTomato}>
+    <Container
+      id="shared-projects"
+      bgImage={TomatoLines}
+      bgColor={colors.lightTomato}
+    >
       <section>
         <PageTitle title="Startups" color={colors.tomato} />
         <Row gap100>

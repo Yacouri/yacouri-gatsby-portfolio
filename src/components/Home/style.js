@@ -7,11 +7,12 @@ export const ButtonsWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   margin-top: 50px;
   button {
+    cursor: pointer;
     font-size: 17px;
     font-weight: 600;
     outline: none;
     border-radius: 10px;
-		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   }
   .download-cv {
     width: 240px;

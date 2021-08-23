@@ -6,7 +6,7 @@ import WorkingDesk from "../../images/working-desk.png";
 
 const Home = () => {
   return (
-    <Container h80>
+    <Container h80 mt100>
       <section>
         <Row>
           <SectionInfo>
