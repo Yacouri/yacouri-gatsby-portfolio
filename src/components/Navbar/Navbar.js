@@ -16,22 +16,22 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/">About</Link>
+              <Link to="#about">About</Link>
             </li>
             <li>
-              <Link to="/">Skills</Link>
+              <Link to="#skills">Skills</Link>
             </li>
             <li>
-              <Link to="/">Blog</Link>
+              <Link to="/blog">Blog</Link>
             </li>
             <li>
-              <Link to="/">Shared project</Link>
+              <Link to="#shared-projects">Shared project</Link>
             </li>
           </ul>
         </LinksWrapper>
 
         <Mailto>
-          <a href="mailto:co.yacouri@gmail.com">Contact</a>
+          <a href="mailto:co.yacouri@gmail.com">co.yacouri@gmail.com</a>
         </Mailto>
       </Nav>
     </div>

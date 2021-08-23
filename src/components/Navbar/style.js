@@ -17,20 +17,25 @@ export const LinksWrapper = styled.div`
   ul li {
     display: inline-block;
     margin: 20px;
-    a {
+    a{
       color: ${colors.black};
       text-decoration: none;
+      transition: 0.2s;
+      border-bottom: 2px solid transparent;
+      &:hover{
+        color: ${colors.primary};
+        border-bottom: 2px solid ${colors.primary};
+      }
     }
   }
 `;
 
 export const Mailto = styled.div`
   a {
-    padding: 12px 30px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: ${colors.white};
-    background-color: ${colors.primary};
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    color: ${colors.black};
+    transition: 0.2s;
+    &:hover{
+      color: ${colors.primary};
+    }
   }
 `;
