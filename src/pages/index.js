@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { GlobalStyle } from "../global/style";
 import Home from "../components/Home/Home";
 import "@fontsource/noto-sans-jp";
 import "@fontsource/noto-sans-jp/100.css";
@@ -17,7 +16,6 @@ import WorkTogether from "../components/WorkTogether/WorkTogether";
 const IndexPage = () => {
   return (
     <Layout>
-      <GlobalStyle />
       <Home />
       {/* <About /> */}
       <Skills />
