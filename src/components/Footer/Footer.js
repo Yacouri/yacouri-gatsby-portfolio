@@ -24,27 +24,27 @@ const Footer = () => {
         <h1>Menu</h1>
         <ul>
           <li>
-            <Link to="/home">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="#">Projects</Link>
           </li>
 
           <li>
             <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <Link to="/startup">Startup</Link>
+            <Link to="/#clients">Clients</Link>
           </li>
           <li>
-            <Link to="/shared-projects">Shared projects</Link>
+            <Link to="#shared-projects">Shared projects</Link>
           </li>
 
           <li>
-            <Link to="/skills">Skills</Link>
+            <Link to="#skills">Skills</Link>
           </li>
           <li>
             <Link to="/contact">Contact me</Link>
