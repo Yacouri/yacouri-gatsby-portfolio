@@ -7,7 +7,6 @@ import { graphql, Link } from "gatsby";
 import { Line, Title } from "../../components/PageTitle/style";
 import { colors } from "../../global/colors";
 import Article from "../../components/Blog/Article";
-import Rectangles from "../../images/3d-rectangles.png";
 
 const Index = ({ data }) => {
   console.log(data)
@@ -58,7 +57,7 @@ const Index = ({ data }) => {
 export default Index;
 
 export const query = graphql`
-query BlogPage {
+query ArticleDetails {
   allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date}) {
     nodes {
       html
