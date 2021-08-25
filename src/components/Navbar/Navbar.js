@@ -1,17 +1,25 @@
 import { Link } from "gatsby";
-import React from "react";
+import React, { useState } from "react";
 import { LinksWrapper, Logo, Mailto, Nav } from "./style";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
+  const [display, setDisplay] = useState(true);
+  const [icon, setIcon] = useState(faBars);
+  const toggleMenu = () => {
+    setDisplay(!display);
+    return display ? setIcon(faBars) : setIcon(faTimes);
+  };
   return (
     <Nav>
       <Logo>
         <h1>Yacouri.</h1>
-        <div>
-          click me
+        <div className="menu">
+          <FontAwesomeIcon icon={icon} onClick={() => toggleMenu()} />
         </div>
       </Logo>
-      <LinksWrapper>
+      <LinksWrapper visibility={display}>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -33,7 +41,7 @@ const Navbar = () => {
           </li>
         </ul>
       </LinksWrapper>
-      <Mailto>
+      <Mailto visibility={display}>
         <a href="mailto:co.yacouri@gmail.com">co.yacouri@gmail.com</a>
       </Mailto>
     </Nav>

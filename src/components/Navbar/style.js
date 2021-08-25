@@ -15,6 +15,9 @@ export const Nav = styled.div`
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   justify-items: center;
+  .menu {
+    display: none;
+  }
   // media queries
   ${breakpoints.xLarge} {
     background-color: ${colors.primary};
@@ -32,10 +35,15 @@ export const Nav = styled.div`
     width: 100%;
     grid-auto-flow: row;
     grid-template-columns: none;
+    .menu {
+      display: block;
+    }
     div:first-child {
-      width: 100%;
+      width: 95%;
+      margin: 20px;
       justify-self: start;
       display: grid;
+      align-items: center;
       grid-template-columns: 1fr 1fr;
       div {
         justify-self: end;
@@ -44,9 +52,19 @@ export const Nav = styled.div`
   }
 `;
 
-export const Logo = styled.div``;
+export const Logo = styled.div`
+  ${breakpoints.small} {
+    h1 {
+      font-size: 60px;
+    }
+    svg {
+      font-size: 40px;
+    }
+  }
+`;
 
 export const LinksWrapper = styled.div`
+  transition: 0.2s;
   ul li {
     display: inline-block;
     margin: 20px;
@@ -71,11 +89,14 @@ export const LinksWrapper = styled.div`
     }
   }
   ${breakpoints.small} {
+    transition: 0.2s;
+    display: ${(props) => (props.visibility ? "block" : "none")};
     ul li {
       display: block;
       text-align: center;
-      a{
-        font-size: 20px;
+      padding: 20px;
+      a {
+        font-size: 30px;
       }
     }
   }
@@ -100,8 +121,10 @@ export const Mailto = styled.div`
   ${breakpoints.medium} {
   }
   ${breakpoints.small} {
-    a{
-      font-size: 20px;
+    display: ${(props) => (props.visibility ? "block" : "none")};
+    padding: 20px;
+    a {
+      font-size: 30px;
     }
   }
 `;
