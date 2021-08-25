@@ -7,6 +7,9 @@ const Navbar = () => {
     <Nav>
       <Logo>
         <h1>Yacouri.</h1>
+        <div>
+          click me
+        </div>
       </Logo>
       <LinksWrapper>
         <ul>

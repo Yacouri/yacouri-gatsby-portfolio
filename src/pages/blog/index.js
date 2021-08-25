@@ -9,7 +9,6 @@ import { colors } from "../../global/colors";
 import Article from "../../components/Blog/Article";
 
 const Index = ({ data }) => {
-  console.log(data)
   const articles = data.allMarkdownRemark.nodes;
   return (
     <Layout>
@@ -37,7 +36,7 @@ const Index = ({ data }) => {
         <Title center>Articles</Title>
         <ArticlesWrapper>
           {
-            articles.map(({frontmatter, index}) =>(
+            articles.map(({frontmatter}, index) =>(
               <Article
                 key={index}
                 img={frontmatter.thumb.childImageSharp.fluid.src}
