@@ -37,7 +37,7 @@ const Startups = () => {
               </div>
             </StartupWrapper>
           </SectionInfo>
-          <SectionInfo>
+          <SectionInfo className="img-section">
             <img src={VrIcons} alt="Illustration" />
           </SectionInfo>
         </Row>

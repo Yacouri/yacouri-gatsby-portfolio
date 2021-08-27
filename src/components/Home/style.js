@@ -60,5 +60,13 @@ export const ButtonsWrapper = styled.div`
     justify-items: center;
   }
   ${breakpoints.small} {
+    width: 100%;
+    grid-template-columns: 1fr;
+    .download-cv,
+    .discover {
+      width: 100%;
+      height: 50px;
+    }
   }
+  
 `;

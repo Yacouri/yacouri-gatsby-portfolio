@@ -20,7 +20,7 @@ const SharedProjects = () => {
       bgColor={colors.lightTomato}
     >
       <section>
-        <PageTitle title="Startups" color={colors.tomato} />
+        <PageTitle title="Shared projects" color={colors.tomato} />
         <Row gap100>
           <SectionInfo>
             <img src={Shared} alt="shared projects" />

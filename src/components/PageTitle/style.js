@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { breakpoints } from "../../global/breakpoints";
 import { colors } from "../../global/colors";
 
 export const PageTitleWrapper = styled.div`
@@ -16,6 +17,9 @@ export const Line = styled.div`
     css`
       margin: 0 auto;
     `}
+  ${breakpoints.small}{
+    margin: 0 auto;
+  }
 `;
 
 export const Title = styled.h2`
@@ -26,4 +30,7 @@ export const Title = styled.h2`
     css`
       text-align: center;
     `}
+  ${breakpoints.small}{
+    text-align: center;
+  }
 `;

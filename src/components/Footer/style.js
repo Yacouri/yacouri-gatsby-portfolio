@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../global/breakpoints";
 import { colors } from "../../global/colors";
 
 export const FooterWrapper = styled.div`
@@ -49,6 +50,24 @@ export const FooterWrapper = styled.div`
       margin: 0px 10px;
       text-decoration: none;
       font-weight: 500;
+    }
+    
+  }
+  ${breakpoints.small}{
+    grid-template-columns: 1fr;
+    gap: 30px;
+    .footer-section {
+      h1, p{
+        text-align: center;
+      }
+      ul {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+    .copyright {
+      text-align: center;
+      grid-column: 1;
     }
   }
 `;

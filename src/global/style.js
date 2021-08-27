@@ -15,22 +15,21 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const Childs = styled.div`
-`
+export const Childs = styled.div``;
 
 export const Container = styled.div`
-width: 100%;
+  /* width: 100%; */
   height: ${(props) => (props.h80 ? "80vh" : "100vh")};
   background-color: ${(props) => props.bgColor};
   background-image: url(${(props) => props.bgImage});
   background-repeat: no-repeat;
   background-position: right;
   display: grid;
-  /* grid-auto-flow: column; */
-  /* grid-template-columns: 100%; */
+  grid-auto-flow: column;
+  grid-template-columns: 100%;
   section {
     align-self: center;
-    /* margin: 0px 300px; */
+    margin: 0px 300px;
   }
   ${(props) =>
     props.mt100 &&
@@ -40,13 +39,13 @@ width: 100%;
   ${breakpoints.xLarge} {
     section {
       align-self: center;
-      /* margin: 0px 100px; */
+      margin: 0px 100px;
     }
   }
   ${breakpoints.large} {
     section {
       align-self: center;
-      /* margin: 0px 70px; */
+      margin: 0px 70px;
     }
   }
   ${breakpoints.medium} {
@@ -61,6 +60,7 @@ width: 100%;
 `;
 
 export const Row = styled.div`
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -73,8 +73,8 @@ export const Row = styled.div`
     gap: 20px;
     grid-template-columns: none;
     grid-template-rows: 1fr;
-    .img-section{
-      order:-1;
+    .img-section {
+      order: -1;
     }
   }
   ${breakpoints.small} {
@@ -129,13 +129,22 @@ export const SectionInfo = styled.div`
   ${breakpoints.medium} {
     margin-top: 50px;
     justify-items: center;
-    h1, .caption, .home-caption {
+    h1,
+    .caption,
+    .home-caption {
       text-align: center;
     }
-    img{
+    img {
       width: 50%;
     }
   }
   ${breakpoints.small} {
+    margin-top: 0px;
+    .title {
+      text-align: center;
+    }
+    img {
+      width: 100%;
+    }
   }
 `;

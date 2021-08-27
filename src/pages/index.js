@@ -16,11 +16,11 @@ import WorkTogether from "../components/WorkTogether/WorkTogether";
 const IndexPage = () => {
   return (
     <Layout>
-      {/* <Home /> */}
+      <Home />
       {/* <About /> */}
-      {/* <Skills /> */}
+      <Skills />
       <Startups />
-      {/* <SharedProjects /> */}
+      <SharedProjects />
       {/* <WorkTogether /> */}
     </Layout>
   );

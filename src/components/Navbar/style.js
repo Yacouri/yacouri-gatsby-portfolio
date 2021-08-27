@@ -8,7 +8,7 @@ export const Nav = styled.div`
   padding: 20px 0px;
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(15px);
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-auto-flow: column;
@@ -40,7 +40,7 @@ export const Nav = styled.div`
     }
     div:first-child {
       width: 95%;
-      margin: 20px;
+      margin: 10px;
       justify-self: start;
       display: grid;
       align-items: center;
@@ -59,6 +59,14 @@ export const Logo = styled.div`
     }
     svg {
       font-size: 40px;
+    }
+  }
+  ${breakpoints.small}{
+    h1{
+      font-size: 30px;
+    }
+    svg{
+      font-size: 25px;
     }
   }
 `;

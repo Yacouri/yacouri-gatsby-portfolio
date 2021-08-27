@@ -26,7 +26,7 @@ export const ServiceCardWrapper = styled.div`
     grid-template-columns: 1fr 1fr;
   }
   ${breakpoints.small} {
-    width: 55%;
+    width: 100%;
     grid-template-columns: 1fr;
   }
 `;

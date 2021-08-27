@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { breakpoints } from "../../global/breakpoints";
 
 export const StartupWrapper = styled.div`
   width: 65%;
@@ -6,7 +7,11 @@ export const StartupWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  img{
+  img {
     width: 190px;
   }
-`
+  ${breakpoints.small}{
+    grid-template-columns: 1fr;
+    margin: 30px auto;
+  }
+`;

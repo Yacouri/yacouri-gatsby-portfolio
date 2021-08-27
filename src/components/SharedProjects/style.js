@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../global/breakpoints";
 import { colors } from "../../global/colors";
 
 export const Projects = styled.div`
@@ -6,6 +7,11 @@ export const Projects = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  ${breakpoints.small} {
+    width: 80%;
+    margin: 40px auto;
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ProjectWrapper = styled.div`
@@ -27,6 +33,16 @@ export const ProjectWrapper = styled.div`
     }
     a {
       color: ${colors.white};
+    }
+  }
+  ${breakpoints.small} {
+    span {
+      font-weight: 600;
+    }
+    .media-info {
+      a {
+        font-weight: 600;
+      }
     }
   }
 `;
