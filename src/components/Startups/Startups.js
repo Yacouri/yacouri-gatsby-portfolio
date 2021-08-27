@@ -15,7 +15,7 @@ const Startups = () => {
     <Container id="clients" bgImage={VioletLines} bgColor={colors.lightViolet}>
       <section>
         <PageTitle title="Startups" color={colors.primary} />
-        <Row gap100>
+        <Row>
           <SectionInfo>
             <h2 className="title">Worked with</h2>
             <p className="caption">

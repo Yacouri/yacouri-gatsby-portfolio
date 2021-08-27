@@ -1,5 +1,5 @@
 import React from "react";
-import { GlobalStyle } from "../global/style";
+import { Childs, GlobalStyle } from "../global/style";
 import Footer from "./Footer/Footer";
 import Navbar from "./Navbar/Navbar";
 
@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     <div>
       <GlobalStyle />
       <Navbar />
-      <div>{children}</div>
+      <Childs>{children}</Childs>
       <Footer />
     </div>
   );

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../global/breakpoints";
 import { colors } from "../../global/colors";
 
 export const ButtonsWrapper = styled.div`
@@ -28,5 +29,36 @@ export const ButtonsWrapper = styled.div`
     color: ${colors.black};
     background-color: transparent;
     border: 2px solid ${colors.black};
+  }
+  // media queries
+  ${breakpoints.xLarge} {
+    gap: 20px;
+    button {
+      font-size: 14px;
+    }
+    .download-cv,
+    .discover {
+      width: 180px;
+      height: 50px;
+    }
+  }
+  ${breakpoints.large} {
+    .download-cv,
+    .discover {
+      width: 160px;
+      height: 50px;
+    }
+  }
+  ${breakpoints.medium} {
+    .download-cv,
+    .discover {
+      width: 180px;
+      height: 50px;
+    }
+    gap: 10px;
+    width: 50%;
+    justify-items: center;
+  }
+  ${breakpoints.small} {
   }
 `;

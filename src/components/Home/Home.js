@@ -28,7 +28,7 @@ const Home = () => {
             </ButtonsWrapper>
           </SectionInfo>
 
-          <SectionInfo>
+          <SectionInfo className="img-section">
             <img src={WorkingDesk} alt="working-desktop" />
           </SectionInfo>
         </Row>
