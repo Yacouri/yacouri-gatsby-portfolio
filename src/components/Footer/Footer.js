@@ -47,7 +47,7 @@ const Footer = () => {
             <Link to="#skills">Skills</Link>
           </li>
           <li>
-            <Link to="/contact">Contact me</Link>
+            <Link to="/contact"><a href="mailto:co.yacouri@gmail.com">Contact me</a></Link>
           </li>
         </ul>
       </div>

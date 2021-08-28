@@ -7,6 +7,7 @@ export const ButtonsWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 50px;
+  gap: 20px;
   button {
     cursor: pointer;
     font-size: 17px;
