@@ -53,7 +53,7 @@ export const FooterWrapper = styled.div`
     }
     
   }
-  ${breakpoints.small}{
+  ${breakpoints.medium}{
     grid-template-columns: 1fr;
     gap: 30px;
     .footer-section {

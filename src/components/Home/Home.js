@@ -2,11 +2,12 @@ import React from "react";
 import { Container, Row, SectionInfo } from "../../global/style";
 import { ButtonsWrapper } from "./style";
 import WorkingDesk from "../../images/working-desk.png";
+// import Fade from 'react-reveal-animation/Fade';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Home = () => {
   return (
-    <Container h80 mt100>
+    <Container mt100>
       <section>
         <Row>
           <SectionInfo>

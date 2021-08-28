@@ -10,6 +10,7 @@ import PinkSpiral from "../../images/pink-spiral.png";
 import Rectangles from "../../images/3d-rectangles.png";
 import Card from "./Card";
 import YellowLines from "../../images/yellow-lines.png";
+// import Fade from 'react-reveal-animation/Fade';
 
 const Skills = () => {
   return (

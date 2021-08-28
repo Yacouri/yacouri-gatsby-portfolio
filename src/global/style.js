@@ -78,6 +78,12 @@ export const Row = styled.div`
     }
   }
   ${breakpoints.small} {
+    gap: 20px;
+    grid-template-columns: none;
+    grid-template-rows: 1fr;
+    .img-section {
+      order: -1;
+    }
   }
 `;
 
@@ -127,15 +133,15 @@ export const SectionInfo = styled.div`
     }
   }
   ${breakpoints.medium} {
-    margin-top: 50px;
-    justify-items: center;
+    margin-top: 0px;
     h1,
+    .home-caption,
     .caption,
-    .home-caption {
+    .title {
       text-align: center;
     }
     img {
-      width: 50%;
+      width: 100%;
     }
   }
   ${breakpoints.small} {

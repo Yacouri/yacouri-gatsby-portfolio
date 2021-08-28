@@ -21,7 +21,7 @@ export const ServiceCardWrapper = styled.div`
   }
   ${breakpoints.medium} {
     margin-top: 30px;
-    width: 55%;
+    width: 100%;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
   }
@@ -53,9 +53,7 @@ export const ServiceCard = styled.div`
   }
   ${breakpoints.medium} {
     img {
-      width: 35px;
+      width: 40px;
     }
-  }
-  ${breakpoints.small} {
   }
 `;

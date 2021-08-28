@@ -50,14 +50,13 @@ export const ButtonsWrapper = styled.div`
     }
   }
   ${breakpoints.medium} {
+    width: 100%;
+    grid-template-columns: 1fr;
     .download-cv,
     .discover {
-      width: 180px;
+      width: 100%;
       height: 50px;
     }
-    gap: 10px;
-    width: 50%;
-    justify-items: center;
   }
   ${breakpoints.small} {
     width: 100%;
@@ -68,5 +67,4 @@ export const ButtonsWrapper = styled.div`
       height: 50px;
     }
   }
-  
 `;

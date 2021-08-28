@@ -50,4 +50,7 @@ export const H2 = styled.h2`
   margin: 15px 0px 40px 0px;
   color: ${(props) => props.txtColor};
   font-weight: 700;
+  ${breakpoints.xLarge} {
+    font-size: 17px;
+  }
 `;

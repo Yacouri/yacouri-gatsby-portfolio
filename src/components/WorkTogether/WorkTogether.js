@@ -16,7 +16,9 @@ const WorkTogether = () => {
             Let me help you to take your business online
             <br />& increase your client base
           </p>
-          <Link to="/contact">Connect with me</Link>
+          <div className="contact-link">
+            <Link to="/contact">Connect with me</Link>
+          </div>
         </div>
         <div className="touch-img">
           <img src={GetInTouch} alt="get in touch with Yacouri" />

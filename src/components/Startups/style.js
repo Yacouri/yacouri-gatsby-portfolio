@@ -10,8 +10,14 @@ export const StartupWrapper = styled.div`
   img {
     width: 190px;
   }
+  ${breakpoints.medium}{
+    grid-template-columns: 1fr 1fr;
+    margin: 30px auto;
+    text-align: center;
+  }
   ${breakpoints.small}{
     grid-template-columns: 1fr;
     margin: 30px auto;
+    text-align: center;
   }
 `;

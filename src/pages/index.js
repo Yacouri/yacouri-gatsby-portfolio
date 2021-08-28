@@ -21,7 +21,7 @@ const IndexPage = () => {
       <Skills />
       <Startups />
       <SharedProjects />
-      {/* <WorkTogether /> */}
+      <WorkTogether />
     </Layout>
   );
 };

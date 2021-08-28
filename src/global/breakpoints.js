@@ -2,7 +2,7 @@ const device = {
   small: "576px",
   medium: "768px",
   large: "992px",
-  xLarge: "1200px",
+  xLarge: "1360px",
 };
 
 export const breakpoints = {

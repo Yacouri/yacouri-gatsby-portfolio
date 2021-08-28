@@ -15,6 +15,7 @@ export const Nav = styled.div`
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   justify-items: center;
+  z-index: 99999;
   .menu {
     display: none;
   }
@@ -29,6 +30,24 @@ export const Nav = styled.div`
   }
   ${breakpoints.medium} {
     background-color: ${colors.yellow};
+    background-color: ${colors.lightTomato};
+    width: 100%;
+    grid-auto-flow: row;
+    grid-template-columns: none;
+    .menu {
+      display: block;
+    }
+    div:first-child {
+      width: 95%;
+      margin: 10px;
+      justify-self: start;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+      div {
+        justify-self: end;
+      }
+    }
   }
   ${breakpoints.small} {
     background-color: ${colors.lightTomato};
@@ -53,19 +72,19 @@ export const Nav = styled.div`
 `;
 
 export const Logo = styled.div`
-  ${breakpoints.small} {
+  /* ${breakpoints.small} {
     h1 {
       font-size: 60px;
     }
     svg {
       font-size: 40px;
     }
-  }
-  ${breakpoints.small}{
-    h1{
+  } */
+  ${breakpoints.small} {
+    h1 {
       font-size: 30px;
     }
-    svg{
+    svg {
       font-size: 25px;
     }
   }
@@ -93,6 +112,18 @@ export const LinksWrapper = styled.div`
       margin: 15px;
       a {
         font-size: 15px;
+      }
+    }
+  }
+  ${breakpoints.medium} {
+    transition: 0.2s;
+    display: ${(props) => (props.visibility ? "block" : "none")};
+    ul li {
+      display: block;
+      text-align: center;
+      padding: 20px;
+      a {
+        font-size: 30px;
       }
     }
   }
@@ -127,6 +158,11 @@ export const Mailto = styled.div`
   ${breakpoints.large} {
   }
   ${breakpoints.medium} {
+    display: ${(props) => (props.visibility ? "block" : "none")};
+    padding: 20px;
+    a {
+      font-size: 30px;
+    }
   }
   ${breakpoints.small} {
     display: ${(props) => (props.visibility ? "block" : "none")};
@@ -136,12 +172,3 @@ export const Mailto = styled.div`
     }
   }
 `;
-
-// ${breakpoints.xLarge} {
-// }
-// ${breakpoints.large} {
-// }
-// ${breakpoints.medium} {
-// }
-// ${breakpoints.small} {
-// }
