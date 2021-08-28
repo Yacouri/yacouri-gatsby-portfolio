@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../global/breakpoints";
 import { colors } from "../../global/colors";
 
 export const ShowArticles = styled.div`
@@ -15,6 +16,10 @@ export const ShowArticles = styled.div`
     font-weight: 400;
     border-radius: 10px;
   }
+  ${breakpoints.small} {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 `;
 
 export const ArticlesWrapper = styled.div`
@@ -24,6 +29,9 @@ export const ArticlesWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   place-items: center;
   gap: 40px;
+  ${breakpoints.medium} {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ArticleCard = styled.div`
@@ -61,5 +69,8 @@ export const ArticleCard = styled.div`
       background-color: ${colors.primary};
       color: ${colors.white};
     }
+  }
+  ${breakpoints.medium} {
+    grid-template-columns: 1fr;
   }
 `;

@@ -102,6 +102,11 @@ export const SectionInfo = styled.div`
     font-weight: 700;
     line-height: 50px;
   }
+  .title-two {
+    margin-top: 30px;
+    font-weight: 700;
+    line-height: 50px;
+  }
   .caption {
     font-size: 16px;
     font-weight: 400;
@@ -113,6 +118,21 @@ export const SectionInfo = styled.div`
     font-weight: 400;
     margin-top: 30px;
     color: ${colors.secondary};
+  }
+  .social-icons {
+    a {
+      svg{
+        color: ${colors.black};
+        font-size: 18px;
+        margin: 10px 20px 0px 0px ;
+        transition: 0.2s;
+      }
+      &:hover {
+        svg {
+          color: ${colors.primary};
+        }
+      }
+    }
   }
   img {
     width: 100%;
@@ -137,20 +157,29 @@ export const SectionInfo = styled.div`
     h1,
     .home-caption,
     .caption,
-    .title {
+    .title,
+    .title-two {
       text-align: center;
     }
     img {
       width: 100%;
     }
-  }
-  ${breakpoints.small} {
-    margin-top: 0px;
-    .title {
-      text-align: center;
-    }
-    img {
-      width: 100%;
+    .social-icons { 
+      margin: 0 auto;
+      a {
+        text-align: center;
+        svg{
+          color: ${colors.black};
+          font-size: 18px;
+          margin: 10px 20px 0px 0px ;
+          transition: 0.2s;
+        }
+        &:hover {
+          svg {
+            color: ${colors.primary};
+          }
+        }
+      }
     }
   }
 `;

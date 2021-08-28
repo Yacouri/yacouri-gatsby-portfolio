@@ -14,7 +14,7 @@ const Startups = () => {
   return (
     <Container id="clients" bgImage={VioletLines} bgColor={colors.lightViolet}>
       <section>
-        <PageTitle title="Startups" color={colors.primary} />
+        <PageTitle title="Clients" color={colors.primary} />
         <Row>
           <SectionInfo>
             <h2 className="title">Worked with</h2>

@@ -21,16 +21,12 @@ export const Nav = styled.div`
   }
   // media queries
   ${breakpoints.xLarge} {
-    background-color: ${colors.primary};
     width: 100%;
     grid-template-columns: 1fr 3fr 1fr;
   }
   ${breakpoints.large} {
-    background-color: ${colors.dribbble};
   }
   ${breakpoints.medium} {
-    background-color: ${colors.yellow};
-    background-color: ${colors.lightTomato};
     width: 100%;
     grid-auto-flow: row;
     grid-template-columns: none;
@@ -50,7 +46,6 @@ export const Nav = styled.div`
     }
   }
   ${breakpoints.small} {
-    background-color: ${colors.lightTomato};
     width: 100%;
     grid-auto-flow: row;
     grid-template-columns: none;
