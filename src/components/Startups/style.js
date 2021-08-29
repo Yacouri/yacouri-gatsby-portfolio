@@ -17,7 +17,6 @@ export const StartupWrapper = styled.div`
   }
   ${breakpoints.small}{
     grid-template-columns: 1fr;
-    margin: 30px auto;
     text-align: center;
   }
 `;

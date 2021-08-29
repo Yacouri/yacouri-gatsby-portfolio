@@ -16,7 +16,7 @@ export const ShowArticles = styled.div`
     font-weight: 400;
     border-radius: 10px;
   }
-  ${breakpoints.small} {
+  ${breakpoints.medium} {
     text-align: center;
     margin-bottom: 50px;
   }

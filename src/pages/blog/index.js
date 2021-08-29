@@ -7,36 +7,41 @@ import { graphql, Link } from "gatsby";
 import { Line, Title } from "../../components/PageTitle/style";
 import { colors } from "../../global/colors";
 import Article from "../../components/Blog/Article";
+import Reveal from "react-reveal-animation";
 
 const Index = ({ data }) => {
   const articles = data.allMarkdownRemark.nodes;
   return (
     <Layout>
-      <Container>
+      <Container mt100>
         <section>
           <Row gap100>
-            <SectionInfo>
-              <img src={ReadingBook} alt="Yacouri blog" />
-            </SectionInfo>
-            <SectionInfo>
-              <h2 className="title">Blog</h2>
-              <p className="caption">
-                Sometimes i write Articles and Stories <br />
-                about my routine, coding, design etc ...
-              </p>
-              <ShowArticles>
-                <Link to="#articles">Click to see articles</Link>
-              </ShowArticles>
-            </SectionInfo>
+            <Reveal effect="fadeInLeft">
+              <SectionInfo>
+                <img src={ReadingBook} alt="Yacouri blog" />
+              </SectionInfo>
+            </Reveal>
+            <Reveal effect="fadeInLeft">
+              <SectionInfo>
+                <h2 className="title">Blog</h2>
+                <p className="caption">
+                  Sometimes i write Articles and Stories <br />
+                  about my routine, coding, design etc ...
+                </p>
+                <ShowArticles>
+                  <Link to="#articles">Click to see articles</Link>
+                </ShowArticles>
+              </SectionInfo>
+            </Reveal>
           </Row>
         </section>
       </Container>
       <div id="articles">
         <Line bgColor={colors.primary} center />
         <Title center>Articles</Title>
-        <ArticlesWrapper>
-          {
-            articles.map(({frontmatter}, index) =>(
+        <Reveal effect="fadeInUp">
+          <ArticlesWrapper>
+            {articles.map(({ frontmatter }, index) => (
               <Article
                 key={index}
                 img={frontmatter.thumb.childImageSharp.fluid.src}
@@ -45,9 +50,9 @@ const Index = ({ data }) => {
                 readingTime={frontmatter.readingTime}
                 url={frontmatter.slug}
               />
-            ))
-          }
-        </ArticlesWrapper>
+            ))}
+          </ArticlesWrapper>
+        </Reveal>
       </div>
     </Layout>
   );
@@ -56,25 +61,25 @@ const Index = ({ data }) => {
 export default Index;
 
 export const query = graphql`
-query ArticleDetails {
-  allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date}) {
-    nodes {
-      html
-      frontmatter {
-        slug
-        stack
-        title
-        readingTime
-        date
-        thumb {
-          childImageSharp {
-            fluid {
-              src
+  query ArticleDetails {
+    allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+      nodes {
+        html
+        frontmatter {
+          slug
+          stack
+          title
+          readingTime
+          date
+          thumb {
+            childImageSharp {
+              fluid {
+                src
+              }
             }
           }
         }
       }
     }
   }
-}
 `;

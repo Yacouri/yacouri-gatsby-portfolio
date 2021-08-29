@@ -75,6 +75,11 @@ export const Container = styled.div`
           width: 100%;
         }
       }
+      div {
+        h1, p {
+          text-align: center;
+        }
+      }
     }
     .contact-link {
       text-align: center;

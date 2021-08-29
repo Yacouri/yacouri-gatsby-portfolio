@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="footer-section">
         <h1>Yacouri</h1>
         <p>
-          Front end developer
+          Front end web developer
           <br />& self-taught Ui/Ux designer
         </p>
       </div>
@@ -47,7 +47,7 @@ const Footer = () => {
             <Link to="#skills">Skills</Link>
           </li>
           <li>
-            <Link to="/contact"><a href="mailto:co.yacouri@gmail.com">Contact me</a></Link>
+            <a href="mailto:co.yacouri@gmail.com">Contact me</a>
           </li>
         </ul>
       </div>
@@ -71,8 +71,8 @@ const Footer = () => {
 
       <div className="copyright">
         <p>
-          Copyright © 2021 Zouhir Yacouri. built with
-          <span>Gatsby</span> by
+          Copyright © 2021 Zouhir Yacouri. <br />
+          made with <span>❤️</span> by
           <a href={media.twitter} target="_blank" rel="noreferrer">
             Yacouri
           </a>

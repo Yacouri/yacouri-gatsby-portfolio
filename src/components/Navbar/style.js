@@ -15,7 +15,7 @@ export const Nav = styled.div`
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   justify-items: center;
-  z-index: 99999;
+  z-index: 99;
   .menu {
     display: none;
   }
@@ -67,14 +67,13 @@ export const Nav = styled.div`
 `;
 
 export const Logo = styled.div`
-  /* ${breakpoints.small} {
-    h1 {
-      font-size: 60px;
+  h1 > a {
+    text-decoration: none;
+    color: ${colors.black};
+    span {
+      color: ${colors.primary};
     }
-    svg {
-      font-size: 40px;
-    }
-  } */
+  }
   ${breakpoints.small} {
     h1 {
       font-size: 30px;
@@ -116,9 +115,9 @@ export const LinksWrapper = styled.div`
     ul li {
       display: block;
       text-align: center;
-      padding: 20px;
+      padding: 15px;
       a {
-        font-size: 30px;
+        font-size: 15px;
       }
     }
   }
@@ -128,9 +127,9 @@ export const LinksWrapper = styled.div`
     ul li {
       display: block;
       text-align: center;
-      padding: 20px;
+      padding: 10px;
       a {
-        font-size: 30px;
+        font-size: 15px;
       }
     }
   }
@@ -156,14 +155,14 @@ export const Mailto = styled.div`
     display: ${(props) => (props.visibility ? "block" : "none")};
     padding: 20px;
     a {
-      font-size: 30px;
+      font-size: 15px;
     }
   }
   ${breakpoints.small} {
     display: ${(props) => (props.visibility ? "block" : "none")};
     padding: 20px;
     a {
-      font-size: 30px;
+      font-size: 15px;
     }
   }
 `;

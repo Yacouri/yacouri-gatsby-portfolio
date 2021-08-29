@@ -12,7 +12,7 @@ export const Projects = styled.div`
     gap: 10px;
   }
   ${breakpoints.small} {
-    width: 80%;
+    width: 60%;
     margin: 40px auto;
     grid-template-columns: 1fr;
   }

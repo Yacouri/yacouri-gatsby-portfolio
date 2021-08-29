@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../global/breakpoints";
 import { colors } from "../global/colors";
 
 export const ArticleContainer = styled.div`
@@ -82,8 +83,6 @@ export const ArticleContainer = styled.div`
     h3 em {
       color: grey;
     }
-
-    /* @end */
 
     small {
       font-size: 65%;
@@ -217,6 +216,14 @@ export const ArticleContainer = styled.div`
     table tr th :last-child,
     table tr td :last-child {
       margin-bottom: 0;
+    }
+  }
+  ${breakpoints.small} {
+    margin: 150px 30px;
+    .article-content {
+      hr {
+        margin: 3rem auto;
+      }
     }
   }
 `;

@@ -11,6 +11,7 @@ import {
   faBehance,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import Reveal from "react-reveal-animation";
 
 const SharedProjects = () => {
   return (
@@ -22,42 +23,46 @@ const SharedProjects = () => {
       <section>
         <PageTitle title="Shared projects" color={colors.tomato} />
         <Row gap100>
-          <SectionInfo>
-            <img src={Shared} alt="shared projects" />
-          </SectionInfo>
-          <SectionInfo>
-            <h2 className="title">Dev & Design</h2>
-            <p className="caption">
-              Here i share open sourced development projects <br />& designs on
-              different platforms.
-            </p>
-            <Projects>
-              <Project
-                department="Design"
-                media="Dribbble"
-                link="https://dribbble.com/yacouri"
-                icon={faDribbble}
-                bgColor={colors.dribbble}
-                color={colors.lightDribbble}
-              />
-              <Project
-                department="Design"
-                media="Behance"
-                link="https://www.behance.net/zouhiryacouri"
-                icon={faBehance}
-                bgColor={colors.behance}
-                color={colors.lightBehance}
-              />
-              <Project
-                department="Design"
-                media="Github"
-                link="https://github.com/yacouri"
-                icon={faGithub}
-                bgColor={colors.github}
-                color={colors.lightGithub}
-              />
-            </Projects>
-          </SectionInfo>
+          <Reveal effect="fadeInLeft">
+            <SectionInfo>
+              <img src={Shared} alt="shared projects" />
+            </SectionInfo>
+          </Reveal>
+          <Reveal effect="fadeInRight">
+            <SectionInfo>
+              <h2 className="title">Dev & Design</h2>
+              <p className="caption">
+                Here i share open sourced development projects <br />& designs
+                on different platforms.
+              </p>
+              <Projects>
+                <Project
+                  department="Design"
+                  media="Dribbble"
+                  link="https://dribbble.com/yacouri"
+                  icon={faDribbble}
+                  bgColor={colors.dribbble}
+                  color={colors.lightDribbble}
+                />
+                <Project
+                  department="Design"
+                  media="Behance"
+                  link="https://www.behance.net/zouhiryacouri"
+                  icon={faBehance}
+                  bgColor={colors.behance}
+                  color={colors.lightBehance}
+                />
+                <Project
+                  department="Design"
+                  media="Github"
+                  link="https://github.com/yacouri"
+                  icon={faGithub}
+                  bgColor={colors.github}
+                  color={colors.lightGithub}
+                />
+              </Projects>
+            </SectionInfo>
+          </Reveal>
         </Row>
       </section>
     </Container>

@@ -9,6 +9,7 @@ import Leavik from "../../images/leavik.png";
 import Decobois from "../../images/decobois.png";
 import Jobathome from "../../images/jobathome.png";
 import Herseyshop from "../../images/herseyshop.png";
+import Reveal from "react-reveal-animation";
 
 const Startups = () => {
   return (
@@ -16,30 +17,34 @@ const Startups = () => {
       <section>
         <PageTitle title="Clients" color={colors.primary} />
         <Row>
-          <SectionInfo>
-            <h2 className="title">Worked with</h2>
-            <p className="caption">
-              Here are some satisfied clients that <br />i have been working
-              with ⭐
-            </p>
-            <StartupWrapper>
-              <div>
-                <img src={Leavik} alt="leavik" />
-              </div>
-              <div>
-                <img src={Decobois} alt="decobois" />
-              </div>
-              <div>
-                <img src={Jobathome} alt="jobathome" />
-              </div>
-              <div>
-                <img src={Herseyshop} alt="herseyshop" />
-              </div>
-            </StartupWrapper>
-          </SectionInfo>
-          <SectionInfo className="img-section">
-            <img src={VrIcons} alt="Illustration" />
-          </SectionInfo>
+          <Reveal effect="fadeInLeft">
+            <SectionInfo>
+              <h2 className="title">Worked with</h2>
+              <p className="caption">
+                Here are some satisfied clients that <br />i have been working
+                with ⭐
+              </p>
+              <StartupWrapper>
+                <div>
+                  <img src={Leavik} alt="leavik" />
+                </div>
+                <div>
+                  <img src={Decobois} alt="decobois" />
+                </div>
+                <div>
+                  <img src={Jobathome} alt="jobathome" />
+                </div>
+                <div>
+                  <img src={Herseyshop} alt="herseyshop" />
+                </div>
+              </StartupWrapper>
+            </SectionInfo>
+          </Reveal>
+          <Reveal effect="fadeInRight">
+            <SectionInfo className="img-section">
+              <img src={VrIcons} alt="Illustration" />
+            </SectionInfo>
+          </Reveal>
         </Row>
       </section>
     </Container>

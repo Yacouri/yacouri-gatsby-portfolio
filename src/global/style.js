@@ -18,7 +18,6 @@ export const GlobalStyle = createGlobalStyle`
 export const Childs = styled.div``;
 
 export const Container = styled.div`
-  /* width: 100%; */
   height: ${(props) => (props.h80 ? "80vh" : "100vh")};
   background-color: ${(props) => props.bgColor};
   background-image: url(${(props) => props.bgImage});
@@ -49,8 +48,14 @@ export const Container = styled.div`
   ${breakpoints.medium} {
     height: 100%;
     section {
-      /* width: 100%; */
       margin-bottom: 30px;
+    }
+  }
+  ${breakpoints.small} {
+    margin-top: ${props => props.mt100 ? "100px" : "0"};
+    height: 100%;
+    section {
+      margin: 0px 30px 30px 30px;
     }
   }
 `;
@@ -85,7 +90,6 @@ export const Row = styled.div`
 
 export const SectionInfo = styled.div`
   align-self: center;
-  /* width: 100%; */
   h1 {
     font-weight: 700;
     line-height: 50px;
@@ -149,15 +153,8 @@ export const SectionInfo = styled.div`
     }
   }
   ${breakpoints.xLarge} {
-    h1 {
-      line-height: 40px;
-      font-size: 40px;
-    }
     .title {
       font-size: 22px;
-    }
-    .caption {
-      font-size: 14px;
     }
     .home-caption {
       font-size: 18px;
@@ -176,13 +173,12 @@ export const SectionInfo = styled.div`
       width: 100%;
     }
     .social-icons {
-      margin: 0 auto;
+      text-align: center;
       a {
-        text-align: center;
         svg {
           color: ${colors.black};
           font-size: 18px;
-          margin: 10px 20px 0px 0px;
+          margin: 10px 10px 0px 10px;
           transition: 0.2s;
         }
         &:hover {
@@ -191,6 +187,18 @@ export const SectionInfo = styled.div`
           }
         }
       }
+    }
+  }
+  ${breakpoints.small} {
+    .title {
+      line-height: 25px;
+    }
+    h1{
+      font-size: 25px;
+      line-height: 25px;
+    }
+    .home-caption {
+      font-size: 14px;
     }
   }
 `;

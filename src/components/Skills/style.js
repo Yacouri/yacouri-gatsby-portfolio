@@ -23,7 +23,8 @@ export const ServiceCardWrapper = styled.div`
     grid-template-columns: 1fr 1fr;
   }
   ${breakpoints.small} {
-    width: 100%;
+    margin: 30px auto;
+    width: 80%;
     grid-template-columns: 1fr;
   }
 `;
@@ -58,6 +59,11 @@ export const ServiceCard = styled.div`
   ${breakpoints.medium} {
     img {
       width: 40px;
+    }
+  }
+  ${breakpoints.small} {
+    img {
+      width: 35px;
     }
   }
 `;
