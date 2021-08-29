@@ -11,7 +11,7 @@ import {
   faBehance,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import Reveal from "react-reveal-animation";
+import Zoom from "react-reveal-animation";
 
 const SharedProjects = () => {
   return (
@@ -22,13 +22,11 @@ const SharedProjects = () => {
     >
       <section>
         <PageTitle title="Shared projects" color={colors.tomato} />
-        <Row gap100>
-          <Reveal effect="fadeInLeft">
+        <Zoom>
+          <Row gap100>
             <SectionInfo>
               <img src={Shared} alt="shared projects" />
             </SectionInfo>
-          </Reveal>
-          <Reveal effect="fadeInRight">
             <SectionInfo>
               <h2 className="title">Dev & Design</h2>
               <p className="caption">
@@ -62,8 +60,8 @@ const SharedProjects = () => {
                 />
               </Projects>
             </SectionInfo>
-          </Reveal>
-        </Row>
+          </Row>
+        </Zoom>
       </section>
     </Container>
   );

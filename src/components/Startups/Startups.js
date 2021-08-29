@@ -9,15 +9,15 @@ import Leavik from "../../images/leavik.png";
 import Decobois from "../../images/decobois.png";
 import Jobathome from "../../images/jobathome.png";
 import Herseyshop from "../../images/herseyshop.png";
-import Reveal from "react-reveal-animation";
+import { Zoom } from "react-reveal-animation";
 
 const Startups = () => {
   return (
     <Container id="clients" bgImage={VioletLines} bgColor={colors.lightViolet}>
       <section>
         <PageTitle title="Clients" color={colors.primary} />
-        <Row>
-          <Reveal effect="fadeInLeft">
+        <Zoom>
+          <Row>
             <SectionInfo>
               <h2 className="title">Worked with</h2>
               <p className="caption">
@@ -39,13 +39,11 @@ const Startups = () => {
                 </div>
               </StartupWrapper>
             </SectionInfo>
-          </Reveal>
-          <Reveal effect="fadeInRight">
             <SectionInfo className="img-section">
               <img src={VrIcons} alt="Illustration" />
             </SectionInfo>
-          </Reveal>
-        </Row>
+          </Row>
+        </Zoom>
       </section>
     </Container>
   );

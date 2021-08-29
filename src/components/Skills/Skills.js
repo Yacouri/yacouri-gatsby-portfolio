@@ -10,20 +10,18 @@ import PinkSpiral from "../../images/pink-spiral.png";
 import Rectangles from "../../images/3d-rectangles.png";
 import Card from "./Card";
 import YellowLines from "../../images/yellow-lines.png";
-import Reveal from "react-reveal-animation";
+import { Zoom } from "react-reveal-animation";
 
 const Skills = () => {
   return (
     <Container id="skills" bgImage={YellowLines}>
       <section>
         <PageTitle title="Skills" color={colors.pink} />
-        <Row gap100>
-          <Reveal effect="fadeInUp">
+        <Zoom>
+          <Row gap100>
             <SectionInfo>
               <img src={GeekProgrammer} alt="geek-programmer" />
             </SectionInfo>
-          </Reveal>
-          <Reveal effect="fadeInUp">
             <SectionInfo>
               <h2 className="title">SKills & Services</h2>
               <p className="caption">
@@ -39,8 +37,8 @@ const Skills = () => {
                 <Card img={GradientBall} title="User Experience" />
               </ServiceCardWrapper>
             </SectionInfo>
-          </Reveal>
-        </Row>
+          </Row>
+        </Zoom>
       </section>
     </Container>
   );

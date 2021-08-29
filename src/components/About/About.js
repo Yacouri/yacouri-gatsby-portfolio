@@ -12,15 +12,15 @@ import {
   faBehance,
 } from "@fortawesome/free-brands-svg-icons";
 import Yacouri from "../../images/yacouri.png";
-import { Reveal, Zoom } from "react-reveal-animation";
+import { Zoom } from "react-reveal-animation";
 
 const About = () => {
   return (
     <Container id="about" bgColor={colors.lightYellow} bgImage={TomatoLines}>
       <section>
         <PageTitle title="About me" color={colors.yellow} />
-        <Row gap100>
-          <Reveal effect="fadeInLeft">
+        <Zoom>
+          <Row gap100>
             <SectionInfo>
               <h2 className="title">Who am i & What i'm doing</h2>
               <p className="caption">
@@ -49,13 +49,11 @@ const About = () => {
                 </a>
               </div>
             </SectionInfo>
-          </Reveal>
-          <Zoom center>
             <SectionInfo className="img-section">
               <img src={Yacouri} alt="Zouhir Yacouri" />
             </SectionInfo>
-          </Zoom>
-        </Row>
+          </Row>
+        </Zoom>
       </section>
     </Container>
   );

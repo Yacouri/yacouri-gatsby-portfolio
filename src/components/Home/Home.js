@@ -2,14 +2,16 @@ import React from "react";
 import { Container, Row, SectionInfo } from "../../global/style";
 import { ButtonsWrapper } from "./style";
 import WorkingDesk from "../../images/working-desk.png";
-import Reveal from "react-reveal-animation";
+import { Zoom } from "react-reveal-animation";
+import { Link } from "gatsby";
+import CV from '../../pdf/Zouhir_Yacouri_CV.pdf'
 
 const Home = () => {
   return (
     <Container h80 mt100>
       <section>
-        <Row>
-          <Reveal effect="fadeInUp">
+        <Zoom>
+          <Row>
             <SectionInfo>
               <h1>
                 <span>Front end</span>
@@ -23,17 +25,15 @@ const Home = () => {
                 and making great experiences.
               </p>
               <ButtonsWrapper>
-                <button className="download-cv">Download CV</button>
-                <button className="discover">Discover</button>
+                <a href={CV} className="download-cv" download>Download CV</a>
+                <Link to="#about" className="discover">Discover</Link>
               </ButtonsWrapper>
             </SectionInfo>
-          </Reveal>
-          <Reveal effect="fadeInUp">
-          <SectionInfo className="img-section">
-            <img src={WorkingDesk} alt="working-desktop" />
-          </SectionInfo>
-          </Reveal>
-        </Row>
+            <SectionInfo className="img-section">
+              <img src={WorkingDesk} alt="working-desktop" />
+            </SectionInfo>
+          </Row>
+        </Zoom>
       </section>
     </Container>
   );

@@ -26,13 +26,19 @@ export const Container = styled.div`
   display: grid;
   section {
     align-self: center;
-    margin: 0px 200px;
+    margin: 0px 300px;
   }
   ${(props) =>
     props.mt100 &&
     css`
       margin-top: 100px;
     `}
+  ${breakpoints.laptop} {
+    section {
+      align-self: center;
+      margin: 0px 200px;
+    }
+  }
   ${breakpoints.xLarge} {
     section {
       align-self: center;

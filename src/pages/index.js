@@ -12,16 +12,19 @@ import Skills from "../components/Skills/Skills";
 import Startups from "../components/Startups/Startups";
 import SharedProjects from "../components/SharedProjects/SharedProjects";
 import WorkTogether from "../components/WorkTogether/WorkTogether";
+import { Fade } from "react-reveal-animation";
 
 const IndexPage = () => {
   return (
     <Layout>
-      <Home />
-      <About />
-      <Skills />
-      <Startups />
-      <SharedProjects />
-      <WorkTogether />
+      <Fade>
+        <Home />
+        <About />
+        <Skills />
+        <Startups />
+        <SharedProjects />
+      </Fade>
+        <WorkTogether />
     </Layout>
   );
 };

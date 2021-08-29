@@ -3,12 +3,12 @@ import { Container, Title } from "./style";
 import GetInTouch from "../../images/get-in-touch.png";
 import { Link } from "gatsby";
 import { colors } from "../../global/colors";
-import Reveal from "react-reveal-animation";
+import { Zoom } from "react-reveal-animation";
 
 const WorkTogether = () => {
   return (
     <Container>
-      <Reveal effect="fadeInUp">
+      <Zoom>
         <Title color={colors.black}>Let's work together</Title>
         <div className="wrapper">
           <div className="info">
@@ -22,13 +22,11 @@ const WorkTogether = () => {
               <Link to="/contact">Connect with me</Link>
             </div>
           </div>
-          <Reveal effect="fadeInRight">
-            <div className="touch-img">
-              <img src={GetInTouch} alt="get in touch with Yacouri" />
-            </div>
-          </Reveal>
+          <div className="touch-img">
+            <img src={GetInTouch} alt="get in touch with Yacouri" />
+          </div>
         </div>
-      </Reveal>
+      </Zoom>
     </Container>
   );
 };
