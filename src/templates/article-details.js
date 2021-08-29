@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
 import { ArticleContainer } from "./style";
+import { SEO } from "../components/SEO";
 
 const ArticleDetails = ({ data }) => {
   const { html } = data.markdownRemark;
@@ -12,6 +13,7 @@ const ArticleDetails = ({ data }) => {
   console.log(featuredImg.childImageSharp.fluid.src);
   return (
     <Layout>
+      <SEO title={title}/>
       <ArticleContainer>
         <div className="back-link">
           <Link to="/blog">

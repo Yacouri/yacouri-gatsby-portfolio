@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://yacouri.com",
     title: "Yacouri Portfolio",
   },
   plugins: [
@@ -12,6 +12,19 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-fontawesome-css",
+    "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Yacouri Portfolio',
+        short_name: 'Yacouri',
+        start_url: '/',
+        background_color: '#f7f0eb',
+        theme_color: '#a2466c',
+        display: 'standalone',
+        icon: './src/images/logo.png',
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {

@@ -8,11 +8,13 @@ import { Line, Title } from "../../components/PageTitle/style";
 import { colors } from "../../global/colors";
 import Article from "../../components/Blog/Article";
 import Reveal from "react-reveal-animation";
+import { SEO } from "../../components/SEO";
 
 const Index = ({ data }) => {
   const articles = data.allMarkdownRemark.nodes;
   return (
     <Layout>
+      <SEO title="Blog"/>
       <Container mt100>
         <section>
           <Row gap100>

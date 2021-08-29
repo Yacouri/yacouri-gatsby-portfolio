@@ -13,10 +13,19 @@ import Startups from "../components/Startups/Startups";
 import SharedProjects from "../components/SharedProjects/SharedProjects";
 import WorkTogether from "../components/WorkTogether/WorkTogether";
 import { Fade } from "react-reveal-animation";
+import { author, description, media, logo } from "../global/config";
+import { SEO } from "../components/SEO";
 
 const IndexPage = () => {
   return (
     <Layout>
+      <SEO
+        title="Landing page"
+        author={author}
+        description={description}
+        media={media}
+        logo={logo}
+      />
       <Fade>
         <Home />
         <About />
@@ -24,7 +33,7 @@ const IndexPage = () => {
         <Startups />
         <SharedProjects />
       </Fade>
-        <WorkTogether />
+      <WorkTogether />
     </Layout>
   );
 };
