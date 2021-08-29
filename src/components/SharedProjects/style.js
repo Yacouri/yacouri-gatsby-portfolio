@@ -7,6 +7,10 @@ export const Projects = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  ${breakpoints.laptop} {
+    margin-top: 50px;
+    gap: 10px;
+  }
   ${breakpoints.small} {
     width: 80%;
     margin: 40px auto;
@@ -35,6 +39,15 @@ export const ProjectWrapper = styled.div`
       color: ${colors.white};
     }
   }
+  ${breakpoints.laptop} {
+    padding: 15px;
+    span {
+      font-weight: 400;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
   ${breakpoints.small} {
     span {
       font-weight: 600;
@@ -50,6 +63,9 @@ export const H2 = styled.h2`
   margin: 15px 0px 40px 0px;
   color: ${(props) => props.txtColor};
   font-weight: 700;
+  ${breakpoints.laptop} {
+    font-size: 16px;
+  }
   ${breakpoints.xLarge} {
     font-size: 17px;
   }

@@ -50,7 +50,7 @@ const SharedProjects = () => {
               />
               <Project
                 department="Design"
-                media="Dribbble"
+                media="Github"
                 link="https://github.com/yacouri"
                 icon={faGithub}
                 bgColor={colors.github}

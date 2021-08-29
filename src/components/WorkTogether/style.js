@@ -22,7 +22,7 @@ export const Container = styled.div`
         background-color: ${colors.primary};
         padding: 12px 45px;
         color: ${colors.white};
-        font-weight: 200;
+        font-weight: 400;
         border-radius: 10px;
         text-decoration: none;
       }
@@ -42,6 +42,26 @@ export const Container = styled.div`
       transform: scale(1.05);
     }
   }
+  ${breakpoints.laptop} {
+    .contact-link {
+      a {
+        background-color: ${colors.primary};
+        padding: 12px 45px;
+        color: ${colors.white};
+        font-weight: 400;
+        border-radius: 10px;
+        text-decoration: none;
+      }
+    }
+    div {
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
   ${breakpoints.medium} {
     .wrapper {
       padding: 20px;
@@ -59,42 +79,6 @@ export const Container = styled.div`
     .contact-link {
       text-align: center;
     }
-    div {
-      h1,
-      p {
-        text-align: center;
-      }
-      p {
-        font-size: 14px;
-      }
-    }
-  }
-  ${breakpoints.small} {
-    .wrapper {
-      padding: 20px;
-      grid-template-columns: 1fr;
-      .info {
-        margin: 20px auto;
-      }
-      .touch-img {
-        order: -1;
-        img {
-          width: 100%;
-        }
-      }
-    }
-    .contact-link {
-      text-align: center;
-    }
-    div {
-      h1,
-      p {
-        text-align: center;
-      }
-      p {
-        font-size: 14px;
-      }
-    }
   }
 `;
 
@@ -102,6 +86,9 @@ export const Title = styled.h1`
   color: ${colors.black};
   font-weight: 700;
   margin: 70px 0px;
+  ${breakpoints.laptop} {
+    font-size: 24px;
+  }
   ${breakpoints.small} {
     font-size: 24px;
     margin: 40px 0px;

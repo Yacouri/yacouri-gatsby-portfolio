@@ -25,11 +25,9 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   background-position: right;
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 100%;
   section {
     align-self: center;
-    margin: 0px 300px;
+    margin: 0px 200px;
   }
   ${(props) =>
     props.mt100 &&
@@ -54,8 +52,6 @@ export const Container = styled.div`
       /* width: 100%; */
       margin-bottom: 30px;
     }
-  }
-  ${breakpoints.small} {
   }
 `;
 
@@ -121,10 +117,10 @@ export const SectionInfo = styled.div`
   }
   .social-icons {
     a {
-      svg{
+      svg {
         color: ${colors.black};
         font-size: 18px;
-        margin: 10px 20px 0px 0px ;
+        margin: 10px 20px 0px 0px;
         transition: 0.2s;
       }
       &:hover {
@@ -136,6 +132,21 @@ export const SectionInfo = styled.div`
   }
   img {
     width: 100%;
+  }
+  ${breakpoints.laptop} {
+    h1 {
+      line-height: 40px;
+      font-size: 40px;
+    }
+    .title {
+      font-size: 20px;
+    }
+    .caption {
+      font-size: 14px;
+    }
+    .home-caption {
+      font-size: 15px;
+    }
   }
   ${breakpoints.xLarge} {
     h1 {
@@ -164,14 +175,14 @@ export const SectionInfo = styled.div`
     img {
       width: 100%;
     }
-    .social-icons { 
+    .social-icons {
       margin: 0 auto;
       a {
         text-align: center;
-        svg{
+        svg {
           color: ${colors.black};
           font-size: 18px;
-          margin: 10px 20px 0px 0px ;
+          margin: 10px 20px 0px 0px;
           transition: 0.2s;
         }
         &:hover {

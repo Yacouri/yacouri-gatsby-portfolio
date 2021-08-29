@@ -42,6 +42,7 @@ export const FooterWrapper = styled.div`
     }
   }
   .copyright {
+    text-align: center;
     margin-top: 100px;
     grid-column: 2;
     span,
@@ -52,6 +53,12 @@ export const FooterWrapper = styled.div`
       font-weight: 500;
     }
     
+  }${breakpoints.laptop}{
+    .footer-section {
+      ul {
+        gap: 15px;
+      }
+    }
   }
   ${breakpoints.medium}{
     grid-template-columns: 1fr;

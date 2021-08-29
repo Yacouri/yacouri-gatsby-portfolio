@@ -17,7 +17,11 @@ export const Line = styled.div`
     css`
       margin: 0 auto;
     `}
-  ${breakpoints.small}{
+  ${breakpoints.laptop} {
+    width: 40px;
+    height: 7px;
+  }
+  ${breakpoints.small} {
     margin: 0 auto;
   }
 `;
@@ -30,7 +34,10 @@ export const Title = styled.h2`
     css`
       text-align: center;
     `}
-  ${breakpoints.small}{
+  ${breakpoints.laptop} {
+    font-size: 22px;
+  }
+  ${breakpoints.small} {
     text-align: center;
   }
 `;

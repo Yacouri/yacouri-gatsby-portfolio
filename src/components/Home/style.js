@@ -29,9 +29,21 @@ export const ButtonsWrapper = styled.div`
     height: 70px;
     color: ${colors.black};
     background-color: transparent;
-    border: 2px solid ${colors.black};
+    border: none;
   }
   // media queries
+  ${breakpoints.laptop} {
+    gap: 20px;
+    margin-top: 30px;
+    button {
+      font-size: 14px;
+    }
+    .download-cv,
+    .discover {
+      width: 180px;
+      height: 50px;
+    }
+  }
   ${breakpoints.xLarge} {
     gap: 20px;
     button {

@@ -8,21 +8,18 @@ export const ServiceCardWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  ${breakpoints.xLarge} {
+  ${breakpoints.laptop} {
     width: 100%;
     gap: 10px;
-    grid-template-columns: 1fr 1fr;
   }
   ${breakpoints.large} {
     margin-top: 30px;
     width: 80%;
-    gap: 10px;
     grid-template-columns: 1fr;
   }
   ${breakpoints.medium} {
     margin-top: 30px;
     width: 100%;
-    gap: 10px;
     grid-template-columns: 1fr 1fr;
   }
   ${breakpoints.small} {
@@ -41,6 +38,13 @@ export const ServiceCard = styled.div`
   padding: 15px;
   img {
     width: 45px;
+  }
+  ${breakpoints.laptop} {
+    padding: 12px;
+    line-height: 17px;
+    span {
+      font-size: 12px;
+    }
   }
   ${breakpoints.xLarge} {
     padding: 12px;
