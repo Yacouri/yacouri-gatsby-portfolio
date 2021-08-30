@@ -14,22 +14,10 @@ module.exports = {
     "gatsby-plugin-fontawesome-css",
     "gatsby-plugin-react-helmet",
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: 'Yacouri Portfolio',
-        short_name: 'Yacouri',
-        start_url: '/',
-        background_color: '#f7f0eb',
-        theme_color: '#a2466c',
-        display: 'standalone',
-        icon: 'src/images/logo.png',
-      },
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: `${__dirname}/src/images/`,
       },
       __key: "images",
     },
@@ -49,5 +37,18 @@ module.exports = {
       },
       __key: "articles",
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Yacouri Portfolio",
+        short_name: "Yacouri",
+        start_url: "/",
+        background_color: "#f7f0eb",
+        theme_color: "#a2466c",
+        display: "standalone",
+        icon: `src/images/favicon32.png`,
+      },
+    },
+    "gatsby-plugin-offline",
   ],
 };
