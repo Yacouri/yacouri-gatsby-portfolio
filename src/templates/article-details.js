@@ -13,7 +13,7 @@ const ArticleDetails = ({ data }) => {
   console.log(featuredImg.childImageSharp.fluid.src);
   return (
     <Layout>
-      <SEO title={title}/>
+      {/* <SEO title={title}/> */}
       <ArticleContainer>
         <div className="back-link">
           <Link to="/blog">
