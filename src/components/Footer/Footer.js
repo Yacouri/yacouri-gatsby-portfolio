@@ -27,7 +27,7 @@ const Footer = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/#about">About</Link>
           </li>
           <li>
             <Link to="#">Projects</Link>
@@ -40,11 +40,11 @@ const Footer = () => {
             <Link to="/#clients">Clients</Link>
           </li>
           <li>
-            <Link to="#shared-projects">Shared projects</Link>
+            <Link to="/#shared-projects">Shared projects</Link>
           </li>
 
           <li>
-            <Link to="#skills">Skills</Link>
+            <Link to="/#skills">Skills</Link>
           </li>
           <li>
             <a href="mailto:co.yacouri@gmail.com">Contact me</a>

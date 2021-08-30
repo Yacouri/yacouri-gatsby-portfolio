@@ -19,7 +19,7 @@ const WorkTogether = () => {
               <br />& increase your client base
             </p>
             <div className="contact-link">
-              <Link to="/contact">Connect with me</Link>
+              <Link to="#">Connect with me</Link>
             </div>
           </div>
           <div className="touch-img">
