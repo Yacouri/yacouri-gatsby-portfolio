@@ -48,7 +48,7 @@ export const FooterWrapper = styled.div`
     span,
     a {
       color: ${colors.primary};
-      margin: 0px 10px;
+      margin: 0px 5px;
       text-decoration: none;
       font-weight: 500;
     }

@@ -9,6 +9,7 @@ export const SEO = ({ title, author, description, media, logo }) => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={logo} />
+      <meta property="fb:app_id" content={media.facebook} />
       <meta name="twitter:creator" content={media.twitter} />
       <meta name="twitter:site" content={media.twitter} />
       <meta name="twitter:description" content={description} />

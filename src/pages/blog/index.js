@@ -9,12 +9,19 @@ import { colors } from "../../global/colors";
 import Article from "../../components/Blog/Article";
 import Reveal from "react-reveal-animation";
 import { SEO } from "../../components/SEO";
+import { author, description, media, logo } from "../../global/config";
 
 const Index = ({ data }) => {
   const articles = data.allMarkdownRemark.nodes;
   return (
     <Layout>
-      <SEO title="Blog"/>
+      <SEO
+        title="Blog articles"
+        author={author}
+        description={description}
+        media={media}
+        logo={logo}
+      />
       <Container mt100>
         <section>
           <Row gap100>
