@@ -7,7 +7,7 @@ import { graphql, Link } from "gatsby";
 import { Line, Title } from "../../components/PageTitle/style";
 import { colors } from "../../global/colors";
 import Article from "../../components/Blog/Article";
-import Reveal from "react-reveal-animation";
+import Reveal, { Fade } from "react-reveal-animation";
 import { SEO } from "../../components/SEO";
 import { author, description, media, logo } from "../../global/config";
 
@@ -24,13 +24,11 @@ const Index = ({ data }) => {
       />
       <Container mt100>
         <section>
-          <Row gap100>
-            <Reveal effect="fadeInLeft">
+          <Fade>
+            <Row gap100>
               <SectionInfo>
                 <img src={ReadingBook} alt="Yacouri blog" />
               </SectionInfo>
-            </Reveal>
-            <Reveal effect="fadeInLeft">
               <SectionInfo>
                 <h2 className="title">Blog</h2>
                 <p className="caption">
@@ -41,27 +39,25 @@ const Index = ({ data }) => {
                   <Link to="#articles">Click to see articles</Link>
                 </ShowArticles>
               </SectionInfo>
-            </Reveal>
-          </Row>
+            </Row>
+          </Fade>
         </section>
       </Container>
       <div id="articles">
         <Line bgColor={colors.primary} center />
         <Title center>Articles</Title>
-        <Reveal effect="fadeInUp">
-          <ArticlesWrapper>
-            {articles.map(({ frontmatter }, index) => (
-              <Article
-                key={index}
-                img={frontmatter.thumb.childImageSharp.fluid.src}
-                title={frontmatter.title}
-                date={frontmatter.date}
-                readingTime={frontmatter.readingTime}
-                url={frontmatter.slug}
-              />
-            ))}
-          </ArticlesWrapper>
-        </Reveal>
+        <ArticlesWrapper>
+          {articles.map(({ frontmatter }, index) => (
+            <Article
+              key={index}
+              img={frontmatter.thumb.childImageSharp.fluid.src}
+              title={frontmatter.title}
+              date={frontmatter.date}
+              readingTime={frontmatter.readingTime}
+              url={frontmatter.slug}
+            />
+          ))}
+        </ArticlesWrapper>
       </div>
     </Layout>
   );
