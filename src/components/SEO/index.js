@@ -15,7 +15,7 @@ export const SEO = ({ title, author, description, media, logo }) => {
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image:src" content={logo} />
       <meta name="author" content={author} data-react-helmet="true" />
-      <title>{`Yacouri | ${title}`}</title>
+      <title>{`Yacouri - ${title}`}</title>
       <html lang="en" />
     </Helmet>
   );

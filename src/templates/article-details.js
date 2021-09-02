@@ -11,11 +11,10 @@ const ArticleDetails = ({ data }) => {
   const { html } = data.markdownRemark;
   const { title, date, slug, featuredImg, readingTime } =
     data.markdownRemark.frontmatter;
-  console.log(featuredImg.childImageSharp.fluid.src);
   return (
     <Layout>
       <SEO
-        title="Article"
+        title={title}
         author={author}
         description={description}
         media={media}

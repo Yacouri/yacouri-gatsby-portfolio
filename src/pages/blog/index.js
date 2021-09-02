@@ -16,7 +16,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="Blog articles"
+        title="Blog"
         author={author}
         description={description}
         media={media}

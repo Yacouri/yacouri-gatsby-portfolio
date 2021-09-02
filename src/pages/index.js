@@ -20,7 +20,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO
-        title="Landing page"
+        title="Home"
         author={author}
         description={description}
         media={media}
