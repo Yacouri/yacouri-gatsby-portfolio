@@ -14,6 +14,7 @@ module.exports = {
   },
   contact: {
     phone: "+212 696 919 553",
-    email: "co.yacouri@gmail.com"
-  }
+    email: "co.yacouri@gmail.com",
+  },
+  googleAnalyticsId: "G-81ZSD8WJDC",
 };

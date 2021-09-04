@@ -7,7 +7,7 @@ import { graphql, Link } from "gatsby";
 import { Line, Title } from "../../components/PageTitle/style";
 import { colors } from "../../global/colors";
 import Article from "../../components/Blog/Article";
-import Reveal, { Fade } from "react-reveal-animation";
+import { Fade } from "react-reveal-animation";
 import { SEO } from "../../components/SEO";
 import { author, description, media, logo } from "../../global/config";
 

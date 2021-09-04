@@ -1,3 +1,5 @@
+const config = require("./src/global/config");
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://yacouri.com",
@@ -47,6 +49,13 @@ module.exports = {
         theme_color: "#a2466c",
         display: "standalone",
         icon: `src/images/favicon32.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: config.googleAnalyticsId,
+        head: true,
       },
     },
     "gatsby-plugin-offline",
