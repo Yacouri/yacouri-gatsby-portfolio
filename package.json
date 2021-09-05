@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-portfolio",
+  "name": "yacouri-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "gatsby-portfolio",
+  "description": "Yacouri official website.",
   "author": "Yacouri",
   "keywords": [
     "gatsby"
