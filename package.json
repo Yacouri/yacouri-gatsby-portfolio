@@ -37,6 +37,7 @@
     "gatsby-transformer-sharp": "^3.12.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-feather": "^2.0.9",
     "react-helmet": "^6.1.0",
     "react-reveal-animation": "^1.0.1",
     "react-spring": "^9.2.4",

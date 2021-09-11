@@ -1,16 +1,21 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
-import { LinksWrapper, Logo, Mailto, Nav } from "./style";
+import { LinksWrapper, Logo, Mailto, Nav, Theming } from "./style";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { Moon, Sun } from "react-feather";
 
 const Navbar = () => {
   const [display, setDisplay] = useState(false);
   const [icon, setIcon] = useState(faBars);
+  const [themeIcon, setThemeIcon] = useState()
   const toggleMenu = () => {
     setDisplay(!display);
     return display ? setIcon(faBars) : setIcon(faTimes);
   };
+  // const toggleTheme = () => {
+
+  // };
   return (
     <Nav>
       <Logo>
@@ -45,9 +50,10 @@ const Navbar = () => {
           </li>
         </ul>
       </LinksWrapper>
-      <Mailto visibility={display}>
-        <a href="mailto:co.yacouri@gmail.com">co.yacouri@gmail.com</a>
-      </Mailto>
+      <Theming>
+        <Moon strokeWidth="1.5" />
+        <span>Dark</span>
+      </Theming>
     </Nav>
   );
 };

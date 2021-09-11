@@ -135,6 +135,19 @@ export const LinksWrapper = styled.div`
   }
 `;
 
+export const Theming = styled.div`
+  display: flex;
+  align-items: center;
+  &:hover {
+    color: ${colors.primary};
+  }
+  svg {
+    transition: 0.2s;
+    cursor: pointer;
+    margin-right: 0.5rem;
+  }
+`;
+
 export const Mailto = styled.div`
   a {
     color: ${colors.black};
