@@ -52,10 +52,17 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: config.googleAnalyticsId,
-        head: true,
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: ["G-81ZSD8WJDC"],
+        // This object gets passed directly to the gtag config command
+        // This config will be shared across all trackingIds
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+        },
       },
     },
     "gatsby-plugin-offline",
